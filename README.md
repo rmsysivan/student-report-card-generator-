@@ -2,7 +2,7 @@
 # Script Python pour saisir les notes d’un élève, calculer la moyenne, attribuer une mention selon des seuils, et afficher un bulletin. Boucle while pour gérer plusieurs élèves successivement.
 
 while True:
-    
+   
     student_id = input("ID de l'élève : ")
     name = input("Nom de l'élève : ")
     mark_english = int(input("Note Anglais : "))
@@ -24,15 +24,15 @@ while True:
         grade = "Bien"
     elif moyenne >= 10:
         grade = "Obtenu"
-    else:
+    else: 
         grade = "Insuffisant"
 
-    print("\n--- BULLETIN SCOLAIRE ---")
-    print(f"ID : {student_id}")
-    print(f"Nom : {name}")
-    print(f"Moyenne : {moyenne:.2f}")
-    print(f"Mention : {grade}")
-    print("-------------------------\n")
+    print("\n---BULLETIN SCOLAIRE ---")
+    print("ID :", student_id) 
+    print("Nom :" ,name )
+    print("Moyenne :", moyenne )
+    print("Mention :", grade)
+    print("-------------------------")
 
     continuer = input("Ajouter un autre élève ? (oui/non) ").lower()
     if continuer != "oui":
