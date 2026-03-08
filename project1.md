@@ -7,13 +7,13 @@ while True:
     name = input("Nom de l'élève : ")
     mark_english = int(input("Note Anglais : "))
     mark_maths = int(input("Note Maths : "))
-    mark_biology = int(input("Note Biologie : "))
+    mark_biologie = int(input("Note Biologie : "))
 
     
     marks_dict = {
         "Anglais": mark_english,
         "Maths": mark_maths,
-        "Biologie": mark_biology
+        "Biologie": mark_biologie
     }
 
     moyenne = sum(marks_dict.values()) / len(marks_dict)
@@ -27,7 +27,7 @@ while True:
     else: 
         grade = "Insuffisant"
 
-    print("\n---BULLETIN SCOLAIRE ---")
+    print("---BULLETIN SCOLAIRE ---")
     print("ID :", student_id) 
     print("Nom :" ,name )
     print("Moyenne :", moyenne )
